@@ -24,14 +24,14 @@ console.log(prezzoBiglietto);
     const prezzoTotale = (prezzoBiglietto - sconto)
     console.log(prezzoTotale);
     console.log(prezzoTotale.toFixed(2));
-    alert('il prezzo da pagare è:', prezzoTotale)
-    
- } else if (etaDelPasseggero > 18) {
+    alert("il prezzo da pagare è:" + prezzoTotale.toFixed(2));
+
+ } else if (etaDelPasseggero > 65) {
     const sconto = (prezzoBiglietto * 40) / 100;
     console.log(sconto);
     
     const prezzoTotale = (prezzoBiglietto - sconto)
     console.log(prezzoTotale);
     console.log(prezzoTotale.toFixed(2));
-    alert('il prezzo da pagare è:', prezzoTotale)
+    alert('il prezzo da pagare è:' + prezzoTotale.toFixed(2)); 
  }
