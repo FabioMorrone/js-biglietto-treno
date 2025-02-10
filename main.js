@@ -6,8 +6,8 @@ console.log(kmPercorribili);
 
 
 // età dell'utente
-const etàDelPasseggero = Number(prompt("inserire l'età del passeggero")); 
-console.log(etàDelPasseggero);
+const etaDelPasseggero = Number(prompt("inserire l'età del passeggero")); 
+console.log(etaDelPasseggero);
 
 
 // prezzo totale del viaggio
@@ -17,12 +17,12 @@ console.log(prezzoBiglietto);
 
 
         
- if (età < 18) {
+ if (etaDelPasseggero < 18) {
     const sconto = (prezzoBiglietto * 20) / 100;
     console.log(sconto);
     
     const prezzoTotale = (prezzoBiglietto - sconto)
     console.log(prezzoTotale);
-    
+    console.log(prezzoTotale.toFixed(2));
+     alert('il prezzo da pagare e:'), (prezzoTotale)
  }
-
